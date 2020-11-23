@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		9DA2A7E9256C35F400730A87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2A7E8256C35F400730A87 /* AppDelegate.swift */; };
 		9DA2A7EB256C35F400730A87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2A7EA256C35F400730A87 /* SceneDelegate.swift */; };
-		9DA2A7ED256C35F400730A87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2A7EC256C35F400730A87 /* ViewController.swift */; };
 		9DA2A7F0256C35F400730A87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA2A7EE256C35F400730A87 /* Main.storyboard */; };
 		9DA2A7F2256C35F700730A87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA2A7F1256C35F700730A87 /* Assets.xcassets */; };
 		9DA2A7F5256C35F700730A87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA2A7F3256C35F700730A87 /* LaunchScreen.storyboard */; };
 		9DA2A800256C35F800730A87 /* HW_NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2A7FF256C35F800730A87 /* HW_NetworkingTests.swift */; };
 		9DA2A80B256C35F800730A87 /* HW_NetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2A80A256C35F800730A87 /* HW_NetworkingUITests.swift */; };
+		9DA2A82D256C38C300730A87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2A82C256C38C300730A87 /* ViewController.swift */; };
+		9DA2A832256C396400730A87 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2A831256C396400730A87 /* People.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 		9DA2A7E5256C35F400730A87 /* HW_Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_Networking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA2A7E8256C35F400730A87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DA2A7EA256C35F400730A87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9DA2A7EC256C35F400730A87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9DA2A7EF256C35F400730A87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DA2A7F1256C35F700730A87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DA2A7F4256C35F700730A87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		9DA2A806256C35F800730A87 /* HW_NetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW_NetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA2A80A256C35F800730A87 /* HW_NetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW_NetworkingUITests.swift; sourceTree = "<group>"; };
 		9DA2A80C256C35F800730A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA2A82C256C38C300730A87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DA2A831256C396400730A87 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,11 @@
 		9DA2A7E7256C35F400730A87 /* HW_Networking */ = {
 			isa = PBXGroup;
 			children = (
-				9DA2A7E8256C35F400730A87 /* AppDelegate.swift */,
-				9DA2A7EA256C35F400730A87 /* SceneDelegate.swift */,
-				9DA2A7EC256C35F400730A87 /* ViewController.swift */,
-				9DA2A7EE256C35F400730A87 /* Main.storyboard */,
+				9DA2A836256C396900730A87 /* Model */,
+				9DA2A824256C378300730A87 /* AppDelegates */,
+				9DA2A823256C376B00730A87 /* Storyboards */,
+				9DA2A825256C379A00730A87 /* Controllers */,
 				9DA2A7F1256C35F700730A87 /* Assets.xcassets */,
-				9DA2A7F3256C35F700730A87 /* LaunchScreen.storyboard */,
 				9DA2A7F6256C35F700730A87 /* Info.plist */,
 			);
 			path = HW_Networking;
@@ -126,6 +127,40 @@
 				9DA2A80C256C35F800730A87 /* Info.plist */,
 			);
 			path = HW_NetworkingUITests;
+			sourceTree = "<group>";
+		};
+		9DA2A823256C376B00730A87 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2A7EE256C35F400730A87 /* Main.storyboard */,
+				9DA2A7F3256C35F700730A87 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9DA2A824256C378300730A87 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2A7E8256C35F400730A87 /* AppDelegate.swift */,
+				9DA2A7EA256C35F400730A87 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		9DA2A825256C379A00730A87 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2A82C256C38C300730A87 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9DA2A836256C396900730A87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2A831256C396400730A87 /* People.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DA2A7ED256C35F400730A87 /* ViewController.swift in Sources */,
+				9DA2A832256C396400730A87 /* People.swift in Sources */,
+				9DA2A82D256C38C300730A87 /* ViewController.swift in Sources */,
 				9DA2A7E9256C35F400730A87 /* AppDelegate.swift in Sources */,
 				9DA2A7EB256C35F400730A87 /* SceneDelegate.swift in Sources */,
 			);
