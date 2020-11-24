@@ -9,5 +9,5 @@ import Foundation
 
 struct People {
     var name: String
-    var homeworld: String
+    var hair_color: String
 }

@@ -49,8 +49,8 @@ class ViewController: UIViewController {
                 if let results = jsonArray?["results"] as? [ [String: Any?] ] {
                     for object in results{
                     if let name = object["name"] as? String,
-                       let homeworld = object["homeworld"] as? String{
-                        self.swPeople.append(People(name: name, homeworld: homeworld))
+                       let hair_color = object["hair_color"] as? String{
+                        self.swPeople.append(People(name: name, hair_color: hair_color))
                     }
                 }
                 }
@@ -88,7 +88,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         let person = swPeople[indexPath.row]
         
         cell.textLabel?.text = person.name
-        cell.detailTextLabel?.text = person.homeworld
+        cell.detailTextLabel?.text = person.hair_color
         
         return cell
     }
