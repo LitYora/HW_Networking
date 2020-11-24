@@ -16,6 +16,7 @@
 		9DA2A80B256C35F800730A87 /* HW_NetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2A80A256C35F800730A87 /* HW_NetworkingUITests.swift */; };
 		9DA2A82D256C38C300730A87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2A82C256C38C300730A87 /* ViewController.swift */; };
 		9DA2A832256C396400730A87 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2A831256C396400730A87 /* People.swift */; };
+		9DA2A84C256D91C700730A87 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2A84B256D91C700730A87 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9DA2A80C256C35F800730A87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DA2A82C256C38C300730A87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9DA2A831256C396400730A87 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		9DA2A84B256D91C700730A87 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				9DA2A831256C396400730A87 /* People.swift */,
+				9DA2A84B256D91C700730A87 /* CustomCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			files = (
 				9DA2A832256C396400730A87 /* People.swift in Sources */,
 				9DA2A82D256C38C300730A87 /* ViewController.swift in Sources */,
+				9DA2A84C256D91C700730A87 /* CustomCell.swift in Sources */,
 				9DA2A7E9256C35F400730A87 /* AppDelegate.swift in Sources */,
 				9DA2A7EB256C35F400730A87 /* SceneDelegate.swift in Sources */,
 			);

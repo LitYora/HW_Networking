@@ -9,8 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var bodyLabel: UILabel!
+//    @IBOutlet weak var imageView: UIImageView!
+//    @IBOutlet weak var titleLabel: UILabel!
+//    @IBOutlet weak var bodyLabel: UILabel!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -87,11 +88,17 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: CustomCell.id, for: indexPath) as! CustomCell
         let person = swPeople[indexPath.row]
         
-        cell.textLabel?.text = person.name
-        cell.detailTextLabel?.text = person.hair_color
+        cell.imageSpace.image = UIImage(named: "space")
+        
+//        cell.textLabel?.text = person.name
+//        cell.detailTextLabel?.text = person.hair_color
+        cell.firstLabel.text = person.name
+        cell.secondLabel.text = "Hair: \(person.hair_color)"
+        
         
         return cell
     }
