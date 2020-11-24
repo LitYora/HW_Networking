@@ -101,8 +101,8 @@
 		9DA2A7E7256C35F400730A87 /* HW_Networking */ = {
 			isa = PBXGroup;
 			children = (
-				9DA2A836256C396900730A87 /* Model */,
 				9DA2A824256C378300730A87 /* AppDelegates */,
+				9DA2A836256C396900730A87 /* Model */,
 				9DA2A823256C376B00730A87 /* Storyboards */,
 				9DA2A825256C379A00730A87 /* Controllers */,
 				9DA2A7F1256C35F700730A87 /* Assets.xcassets */,

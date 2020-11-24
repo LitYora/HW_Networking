@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SWPeople {
+struct People {
     var name: String
     var homeworld: String
 }
